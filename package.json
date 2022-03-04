@@ -1,0 +1,18 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@3rdweb/hooks": "^1.9.2",
+    "@3rdweb/sdk": "^1.41.3",
+    "ipfs": "^0.62.1",
+    "next": "latest",
+    "orbit-db": "^0.28.3",
+    "orbit-db-identity-provider": "^0.4.0",
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
+  }
+}
