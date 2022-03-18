@@ -186,10 +186,15 @@ const getIPFS = async () => {
       Pubsub:{
         Enabled: true
       },
+      Bootstrap: [
+        '/ip4/3.144.180.153/tcp/4001/p2p/12D3KooWJexPpiwAvZayhBj6cu5479EL6EWP3VsSWiDamt73SySY',
+        '/ip4/3.144.180.153/udp/4001/quic/12D3KooWJexPpiwAvZayhBj6cu5479EL6EWP3VsSWiDamt73SySY'
+      ],
       Addresses: {
           Swarm: [
-            '/dns4/wrtc-star1.par.dwebops.pub/tcp/443/wss/p2p-webrtc-star',
-            '/dns4/wrtc-star2.sjc.dwebops.pub/tcp/443/wss/p2p-webrtc-star'
+            //'/dns4/wrtc-star1.par.dwebops.pub/tcp/443/wss/p2p-webrtc-star',
+            //'/dns4/wrtc-star2.sjc.dwebops.pub/tcp/443/wss/p2p-webrtc-star',
+            '/ip4/3.144.180.153/tcp/9090/wss/p2p-webrtc-star'
           ]
       },
     },
@@ -197,7 +202,6 @@ const getIPFS = async () => {
       pubsub: true
     },
   })
-  // await _ipfs.bootstrap.add(`/ip4/127.0.0.1/tcp/4003/ws/ipfs/${serverInfo.id}`)
   sem.release();
   return _ipfs
 
