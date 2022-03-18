@@ -2,17 +2,43 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "dev-old": "start webrtc-star --port 13579 --host 127.0.0.1 && start node server.js",
     "build": "next build",
     "start": "next start"
   },
   "dependencies": {
     "@3rdweb/hooks": "^1.9.2",
     "@3rdweb/sdk": "^1.41.3",
+    "@libp2p/webrtc-star-signalling-server": "^1.0.2",
+    "@metamask/eth-sig-util": "^4.0.0",
+    "@openzeppelin/contracts": "^4.5.0",
+    "ascii85": "^1.0.2",
+    "bip39": "^3.0.4",
+    "crypto-hash": "^2.0.1",
+    "crypto-js": "^4.1.1",
+    "dotenv": "^16.0.0",
+    "ethereumjs-tx": "^2.1.2",
+    "ethereumjs-util": "^7.1.4",
+    "hdkey": "^2.0.1",
+    "http": "0.0.1-security",
     "ipfs": "^0.62.1",
+    "ipfs-http-client": "^56.0.1",
+    "libp2p-webrtc-star": "^0.25.0",
+    "lodash.merge": "^4.6.2",
     "next": "latest",
     "orbit-db": "^0.28.3",
     "orbit-db-identity-provider": "^0.4.0",
+    "pubnub": "^5.0.1",
+    "pubnub-react": "^2.1.1",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "url": "^0.11.0",
+    "web3": "^1.7.1"
+  },
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.5",
+    "concurrently": "^7.0.0",
+    "ethers": "^5.6.0",
+    "hardhat": "^2.9.1"
   }
 }
